@@ -17,7 +17,7 @@ pipeline {
     }
     stage('three') {
       steps {
-        sh 'echo test > three.txt'
+        sh 'echo "Hi from dinesh repo" > dd.txt'
         
         archiveArtifacts artifacts: 'three.txt', followSymlinks: false
       }
