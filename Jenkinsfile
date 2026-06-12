@@ -19,7 +19,7 @@ pipeline {
       steps {
         sh 'echo "Hi from dinesh repo" > dd.txt'
         
-        archiveArtifacts artifacts: 'three.txt', followSymlinks: false
+        archiveArtifacts artifacts: 'dd.txt', followSymlinks: false
       }
     }
   }
